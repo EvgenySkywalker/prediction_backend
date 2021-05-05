@@ -1,0 +1,433 @@
+INFO:uvicorn.error:Started server process [6040]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:http://127.0.0.1/csv/sdasdasdas/dsds.csv
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "S:\prediction_backend\venv\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 389, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "S:\prediction_backend\venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "S:\prediction_backend\venv\lib\site-packages\fastapi\applications.py", line 179, in __call__
+    await super().__call__(scope, receive, send)
+  File "S:\prediction_backend\venv\lib\site-packages\starlette\applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "S:\prediction_backend\venv\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "S:\prediction_backend\venv\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "S:\prediction_backend\venv\lib\site-packages\starlette\middleware\cors.py", line 78, in __call__
+    await self.app(scope, receive, send)
+  File "S:\prediction_backend\venv\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "S:\prediction_backend\venv\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "S:\prediction_backend\venv\lib\site-packages\starlette\routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "S:\prediction_backend\venv\lib\site-packages\starlette\routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "S:\prediction_backend\venv\lib\site-packages\starlette\routing.py", line 41, in app
+    response = await func(request)
+  File "S:\prediction_backend\venv\lib\site-packages\fastapi\routing.py", line 182, in app
+    raw_response = await run_endpoint_function(
+  File "S:\prediction_backend\venv\lib\site-packages\fastapi\routing.py", line 133, in run_endpoint_function
+    return await dependant.call(**values)
+  File "S:\prediction_backend\app\api\routes\annotation.py", line 37, in annotate
+    response = requests.get(url)
+  File "S:\prediction_backend\venv\lib\site-packages\requests\api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "S:\prediction_backend\venv\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "S:\prediction_backend\venv\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "S:\prediction_backend\venv\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "S:\prediction_backend\venv\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /csv/sdasdasdas/dsds.csv (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001965FB99FD0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+INFO:uvicorn.error:Started server process [12076]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:URL: [http://127.0.0.1/csv/sdasdasdas/dsds.csv]
+ERROR:root:Ошибка скачивания: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /csv/sdasdasdas/dsds.csv (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017086345040>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+ERROR:root:[ERROR]local variable 'file' referenced before assignment
+INFO:uvicorn.error:Started server process [5780]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:URL: [http://127.0.0.1/csv/sdasdasdas/dsds.csv]
+ERROR:root:Ошибка скачивания: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /csv/sdasdasdas/dsds.csv (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002423E709FD0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+INFO:uvicorn.error:Started server process [1808]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [12412]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:URL: [http://127.0.0.1/csv/sdasdasdas/dsds.csv]
+ERROR:root:Ошибка скачивания: HTTPConnectionPool(host='127.0.0.1', port=80): Max retries exceeded with url: /csv/sdasdasdas/dsds.csv (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002A169A89FA0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+INFO:uvicorn.error:Started server process [15164]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [11836]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [7096]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [6772]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [7148]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [1532]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [8116]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [2384]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]SavedModel file does not exist at: app/assets//{saved_model.pbtxt|saved_model.pb}
+INFO:uvicorn.error:Started server process [1496]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]Во время обработки данных: name 'arg_num' is not defined
+INFO:uvicorn.error:Started server process [4652]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]Во время работы алгоритма: Failed to convert a NumPy array to a Tensor (Unsupported object type float).
+INFO:uvicorn.error:Started server process [14244]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]Во время работы алгоритма: in user code:
+
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1462 predict_function  *
+        return step_function(self, iterator)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1452 step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:1211 run
+        return self._extended.call_for_each_replica(fn, args=args, kwargs=kwargs)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:2585 call_for_each_replica
+        return self._call_for_each_replica(fn, args, kwargs)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:2945 _call_for_each_replica
+        return fn(*args, **kwargs)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1445 run_step  **
+        outputs = model.predict_step(data)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1418 predict_step
+        return self(x, training=False)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\base_layer.py:975 __call__
+        input_spec.assert_input_compatibility(self.input_spec, inputs,
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\input_spec.py:212 assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer sequential_1 is incompatible with the layer: expected axis 2 of input shape to have value 8 but received input with shape [None, 60, 11]
+
+ERROR:root:[ERROR]Список пуст: 1 validation error for Label
+mode
+  value is not a valid integer (type=type_error.integer)
+INFO:uvicorn.error:Started server process [4324]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [5884]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [2892]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [3956]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [7672]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]Список пуст: -1
+INFO:uvicorn.error:Started server process [11296]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]-1
+INFO:uvicorn.error:Started server process [7092]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]-1
+INFO:uvicorn.error:Started server process [5652]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]-1
+INFO:uvicorn.error:Started server process [6580]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]1 validation error for Label
+end
+  field required (type=value_error.missing)
+INFO:uvicorn.error:Started server process [5192]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]-1
+INFO:uvicorn.error:Started server process [14760]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]-1
+INFO:uvicorn.error:Started server process [13552]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [12312]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]-1
+INFO:uvicorn.error:Started server process [13528]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [4600]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [3748]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [13816]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [15268]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [3940]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [7052]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [9440]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [1248]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]Во время работы алгоритма: in user code:
+
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1462 predict_function  *
+        return step_function(self, iterator)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1452 step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:1211 run
+        return self._extended.call_for_each_replica(fn, args=args, kwargs=kwargs)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:2585 call_for_each_replica
+        return self._call_for_each_replica(fn, args, kwargs)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:2945 _call_for_each_replica
+        return fn(*args, **kwargs)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1445 run_step  **
+        outputs = model.predict_step(data)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1418 predict_step
+        return self(x, training=False)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\base_layer.py:975 __call__
+        input_spec.assert_input_compatibility(self.input_spec, inputs,
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\input_spec.py:176 assert_input_compatibility
+        raise ValueError('Input ' + str(input_index) + ' of layer ' +
+
+    ValueError: Input 0 of layer sequential_6 is incompatible with the layer: expected ndim=3, found ndim=2. Full shape received: [None, 11]
+
+INFO:uvicorn.error:Started server process [5636]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]Список пуст: only integer scalar arrays can be converted to a scalar index
+INFO:uvicorn.error:Started server process [3224]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [15716]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]Список пуст: only integer scalar arrays can be converted to a scalar index
+INFO:uvicorn.error:Started server process [7676]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]Список пуст: list index out of range
+INFO:uvicorn.error:Started server process [15472]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]list index out of range
+INFO:uvicorn.error:Started server process [14152]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]list index out of range
+INFO:uvicorn.error:Started server process [4288]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]list index out of range
+INFO:uvicorn.error:Started server process [8680]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [7732]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [10796]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]list index out of range
+INFO:uvicorn.error:Started server process [15976]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]list index out of range
+INFO:uvicorn.error:Started server process [4968]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:root:[ERROR]list index out of range
+INFO:uvicorn.error:Started server process [15224]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [7024]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [7292]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [17324]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [14472]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [9240]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [9664]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [10256]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [5756]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+ERROR:root:[ERROR]Во время обработки данных: 'label'
+INFO:uvicorn.error:Started server process [16684]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+ERROR:root:[ERROR]Во время обработки данных: to_numpy() got an unexpected keyword argument 'd_type'
+INFO:uvicorn.error:Started server process [19272]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+ERROR:root:[ERROR]Во время обработки данных: index 6 is out of bounds for axis 0 with size 6
+INFO:uvicorn.error:Started server process [8680]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+ERROR:root:[ERROR]Во время работы алгоритма: in user code:
+
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1462 predict_function  *
+        return step_function(self, iterator)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1452 step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:1211 run
+        return self._extended.call_for_each_replica(fn, args=args, kwargs=kwargs)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:2585 call_for_each_replica
+        return self._call_for_each_replica(fn, args, kwargs)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:2945 _call_for_each_replica
+        return fn(*args, **kwargs)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1445 run_step  **
+        outputs = model.predict_step(data)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1418 predict_step
+        return self(x, training=False)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\base_layer.py:975 __call__
+        input_spec.assert_input_compatibility(self.input_spec, inputs,
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\input_spec.py:176 assert_input_compatibility
+        raise ValueError('Input ' + str(input_index) + ' of layer ' +
+
+    ValueError: Input 0 of layer sequential_30 is incompatible with the layer: expected ndim=3, found ndim=2. Full shape received: [None, 3]
+
+INFO:uvicorn.error:Started server process [9036]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+ERROR:root:[ERROR]Во время работы алгоритма: in user code:
+
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1462 predict_function  *
+        return step_function(self, iterator)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1452 step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:1211 run
+        return self._extended.call_for_each_replica(fn, args=args, kwargs=kwargs)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:2585 call_for_each_replica
+        return self._call_for_each_replica(fn, args, kwargs)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\distribute\distribute_lib.py:2945 _call_for_each_replica
+        return fn(*args, **kwargs)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1445 run_step  **
+        outputs = model.predict_step(data)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\training.py:1418 predict_step
+        return self(x, training=False)
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\base_layer.py:975 __call__
+        input_spec.assert_input_compatibility(self.input_spec, inputs,
+    S:\prediction_backend\venv\lib\site-packages\tensorflow\python\keras\engine\input_spec.py:176 assert_input_compatibility
+        raise ValueError('Input ' + str(input_index) + ' of layer ' +
+
+    ValueError: Input 0 of layer sequential_30 is incompatible with the layer: expected ndim=3, found ndim=2. Full shape received: [None, 180]
+
+INFO:uvicorn.error:Started server process [7500]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+INFO:uvicorn.error:Started server process [2272]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+ERROR:root:[ERROR]Во время обработки данных: operands could not be broadcast together with shapes (0,) (3,) 
+INFO:uvicorn.error:Started server process [14392]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+INFO:uvicorn.error:Started server process [15500]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+INFO:uvicorn.error:Started server process [2416]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+INFO:uvicorn.error:Started server process [15524]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+INFO:uvicorn.error:Started server process [5552]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+INFO:uvicorn.error:Started server process [1416]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+INFO:uvicorn.error:Started server process [5800]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+INFO:uvicorn.error:Started server process [9308]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+INFO:uvicorn.error:Started server process [10988]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+ERROR:root:[ERROR]index 177780 is out of bounds for axis 0 with size 35536
+INFO:uvicorn.error:Started server process [12184]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+ERROR:root:[ERROR]index 177780 is out of bounds for axis 0 with size 35536
+INFO:uvicorn.error:Started server process [15848]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Started server process [13216]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+ERROR:root:[ERROR]index 177780 is out of bounds for axis 0 with size 35536
+INFO:uvicorn.error:Started server process [3400]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+ERROR:root:[ERROR]Во время обработки данных: index 35536 is out of bounds for axis 0 with size 35536
+INFO:uvicorn.error:Started server process [8308]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
